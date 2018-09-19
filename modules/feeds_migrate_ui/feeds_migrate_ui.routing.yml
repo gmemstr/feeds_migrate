@@ -2,7 +2,7 @@
 entity.migration.collection:
   path: '/admin/structure/feeds-migrate/sources'
   defaults:
-    _entity_list: 'migration'
+    _entity_list: 'feed_migration'
     _title: 'Feeds Migrate'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -10,7 +10,7 @@ entity.migration.collection:
 entity.migration.add_form:
   path: '/admin/structure/feeds-migrate/sources/add'
   defaults:
-    _entity_form: 'migration.add'
+    _entity_form: 'feed_migration.add'
     _title_callback: 'Drupal\feeds_migrate_ui\Form\MigrationForm::getTitle'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -18,7 +18,7 @@ entity.migration.add_form:
 entity.migration.edit_form:
   path: '/admin/structure/feeds-migrate/sources/{migration}'
   defaults:
-    _entity_form: 'migration.edit'
+    _entity_form: 'feed_migration.edit'
     _title_callback: 'Drupal\feeds_migrate_ui\Form\MigrationForm::getTitle'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -26,7 +26,7 @@ entity.migration.edit_form:
 entity.migration.mapping_form:
   path: '/admin/structure/feeds-migrate/sources/{migration}/mapping'
   defaults:
-    _entity_form: 'migration.mapping'
+    _entity_form: 'feed_migration.mapping'
     _title: 'Mapping Configuration'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -34,7 +34,7 @@ entity.migration.mapping_form:
 entity.migration.canonical:
   path: '/admin/structure/feeds-migrate/sources/{migration}'
   defaults:
-    _entity_form: 'migration.edit'
+    _entity_form: 'feed_migration.edit'
     _title: 'Edit Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -42,7 +42,7 @@ entity.migration.canonical:
 entity.migration.delete_form:
   path: '/admin/structure/feeds-migrate/sources/{migration}/delete'
   defaults:
-    _entity_form: 'migration.delete'
+    _entity_form: 'feed_migration.delete'
     _title: 'Delete Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
@@ -50,8 +50,7 @@ entity.migration.delete_form:
 entity.migration.duplicate_form:
   path: '/admin/structure/feeds-migrate/sources/{migration}/duplicate'
   defaults:
-    _entity_form: 'migration.duplicate'
+    _entity_form: 'feed_migration.duplicate'
     _title: 'Duplicate Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
-
