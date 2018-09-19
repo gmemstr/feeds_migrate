@@ -4,8 +4,8 @@ entity.feeds_migrate_importer.list:
   base_route: entity.feeds_migrate_importer.collection
 
 
-entity.migration.list:
+entity.feeds_migration.list:
   title: 'Migration Mappers'
-  route_name: entity.migration.collection
+  route_name: entity.feeds_migration.collection
   base_route: entity.feeds_migrate_importer.collection
   weight: 100

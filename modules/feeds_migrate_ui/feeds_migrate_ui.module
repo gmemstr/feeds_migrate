@@ -10,7 +10,7 @@
  */
 function feeds_migrate_ui_entity_type_alter(array &$entity_types) {
   /** @var \Drupal\Core\Config\Entity\ConfigEntityTypeInterface $migration */
-  $migration = &$entity_types['feed_migration'];
+  $migration = &$entity_types['feeds_migration'];
 
   $migration->setFormClass('add', 'Drupal\feeds_migrate_ui\Form\MigrationForm');
   $migration->setFormClass('edit', 'Drupal\feeds_migrate_ui\Form\MigrationForm');

@@ -13,7 +13,7 @@ use Drupal\migrate_plus\Entity\Migration;
  * @see Drupal\migrate_plus\Entity\Migration
  *
  * @ConfigEntityType(
- *   id = "feed_migration",
+ *   id = "feeds_migration",
  *   label = @Translation("Feed Migration"),
  *   entity_keys = {
  *     "id" = "id",

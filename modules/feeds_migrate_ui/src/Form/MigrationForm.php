@@ -535,7 +535,7 @@ class MigrationForm extends EntityForm {
       \Drupal::messenger()
         ->addMessage($this->t('Saved Migration %label', ['%label' => $this->entity->label()]));
       /** @var \Drupal\migrate_plus\Entity\Migration $entity */
-      $form_state->setRedirect('entity.migration.collection');
+      $form_state->setRedirect('entity.feeds_migration.collection');
       return;
     }
 

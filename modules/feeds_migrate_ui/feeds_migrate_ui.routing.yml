@@ -1,56 +1,56 @@
 # AssetInjectorCsss routing definition
-entity.migration.collection:
+entity.feeds_migration.collection:
   path: '/admin/structure/feeds-migrate/sources'
   defaults:
-    _entity_list: 'feed_migration'
+    _entity_list: 'feeds_migration'
     _title: 'Feeds Migrate'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.add_form:
+entity.feeds_migration.add_form:
   path: '/admin/structure/feeds-migrate/sources/add'
   defaults:
-    _entity_form: 'feed_migration.add'
+    _entity_form: 'feeds_migration.add'
     _title_callback: 'Drupal\feeds_migrate_ui\Form\MigrationForm::getTitle'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.edit_form:
-  path: '/admin/structure/feeds-migrate/sources/{migration}'
+entity.feeds_migration.edit_form:
+  path: '/admin/structure/feeds-migrate/sources/{feeds_migration}'
   defaults:
-    _entity_form: 'feed_migration.edit'
+    _entity_form: 'feeds_migration.edit'
     _title_callback: 'Drupal\feeds_migrate_ui\Form\MigrationForm::getTitle'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.mapping_form:
-  path: '/admin/structure/feeds-migrate/sources/{migration}/mapping'
+entity.feeds_migration.mapping_form:
+  path: '/admin/structure/feeds-migrate/sources/{feeds_migration}/mapping'
   defaults:
-    _entity_form: 'feed_migration.mapping'
+    _entity_form: 'feeds_migration.mapping'
     _title: 'Mapping Configuration'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.canonical:
-  path: '/admin/structure/feeds-migrate/sources/{migration}'
+entity.feeds_migration.canonical:
+  path: '/admin/structure/feeds-migrate/sources/{feeds_migration}'
   defaults:
-    _entity_form: 'feed_migration.edit'
+    _entity_form: 'feeds_migration.edit'
     _title: 'Edit Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.delete_form:
-  path: '/admin/structure/feeds-migrate/sources/{migration}/delete'
+entity.feeds_migration.delete_form:
+  path: '/admin/structure/feeds-migrate/sources/{feeds_migration}/delete'
   defaults:
-    _entity_form: 'feed_migration.delete'
+    _entity_form: 'feeds_migration.delete'
     _title: 'Delete Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
 
-entity.migration.duplicate_form:
-  path: '/admin/structure/feeds-migrate/sources/{migration}/duplicate'
+entity.feeds_migration.duplicate_form:
+  path: '/admin/structure/feeds-migrate/sources/{feeds_migration}/duplicate'
   defaults:
-    _entity_form: 'feed_migration.duplicate'
+    _entity_form: 'feeds_migration.duplicate'
     _title: 'Duplicate Importer'
   requirements:
     _permission: 'administer feeds migrate importers'
